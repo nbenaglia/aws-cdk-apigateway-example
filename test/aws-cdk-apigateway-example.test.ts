@@ -1,6 +1,6 @@
 import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
-import { ApiGatewayStack } from '../lib/aws-apigateway-example-stack';
+import { ApiGatewayStack } from '../lib/aws-cdk-apigateway-example-stack';
 
 test('Empty Stack', () => {
     const app = new cdk.App();
