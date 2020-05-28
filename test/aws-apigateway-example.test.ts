@@ -1,11 +1,11 @@
 import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
-import * as AwsCdkVscodeExample from '../lib/aws-cdk-vscode-example-stack';
+import { ApiGatewayStack } from '../lib/aws-apigateway-example-stack';
 
 test('Empty Stack', () => {
     const app = new cdk.App();
     // WHEN
-    const stack = new AwsCdkVscodeExample.AwsCdkVscodeExampleStack(app, 'MyTestStack');
+    const stack = new ApiGatewayStack(app, 'MyTestStack');
     // THEN
     expectCDK(stack).to(matchTemplate({
       "Resources": {}
